@@ -1,0 +1,1035 @@
+﻿/* CSS Document */
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+::selection {
+    color: white;
+    background: #5bb75b;
+}
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #5bb75b;
+}
+
+div{
+    overflow: auto;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /*background: url(../images/ringeround_bg.gif);
+    background:none #f5f5f5;*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+form, p, span {
+    margin:0;
+    text-align:center;
+    border-radius: 10px;
+}
+
+input{
+    border-radius: 7px;
+}
+
+textarea {
+    /*font-family: 'Roboto', sans-serif;*/
+    resize: none;
+}
+
+h1 {
+    color: white;
+    font-size: 26px;
+}
+
+h2 {
+    color: lightgreen;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin: 0 0 0.8em 0;
+}
+
+h3 {
+    color: white;
+    margin: 0 0 10px 0;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+#header {
+	margin: 0 auto;
+	width: 100%;
+    background-color: rgba(105, 105, 105, 0.0);
+    display: block;
+    position: fixed;
+    height: 60px;
+    text-align: center;
+    /*box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);*/
+    top: 0;
+    z-index: 5;
+    overflow-y:hidden;
+}
+
+#searchbox {
+    text-align: center;
+    /*
+    margin: 0 auto;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    */
+    width: 300px;
+    display: inline-block;
+    overflow: auto;
+    padding: 10px 0;
+}
+
+#searchbox:hover {
+    /* background-color: #ddd; */
+    color: lawngreen;
+}
+
+#searchbox input {
+    border: none;
+    color: green;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    /*
+    margin: 0 0 1em 0;
+    padding: 0.5em 0.7em 0.6em 0.7em;
+    */
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+#searchbox input:active {
+    background-color: #008000;
+}
+
+#searchbox input:hover {
+    background-color: white;
+    color: lawngreen;
+}
+
+#search-icon{
+    color: black;
+    font-size: 14px;
+    overflow: auto;
+    margin-left: 10px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#search-icon:hover {
+    color: lawngreen;
+}
+
+#exit {
+    font-size: 25px;
+    color: black;
+}
+
+#exit:hover {
+    color: lawngreen;
+}
+
+#icons {
+    background: green;
+    position: relative;
+    overflow: auto;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+#icons ul {
+    /* left: 80px; */
+    color: white;
+    background-color: black;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    overflow: auto;
+}
+#icons ul li {
+    display: inline-block;
+    overflow: auto;
+    padding: 5px;
+    line-height: 40px;
+    /* line-height: 60px; */
+    vertical-align: middle;
+}
+
+#icons ul li:hover {
+    /* background: #ddd; */
+    color: lawngreen;
+}
+
+#icons ul li a {
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#icons ul li a:hover {
+    color: lawngreen;
+}
+
+#icons ul li a span {
+    color: #008000;
+    text-align: center;
+    width: 100%;
+    overflow: auto;
+}
+
+#icons ul li a input {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+#round_icons {
+    margin: 0 auto;
+    background-color: rgba(255, 0, 0, 0);
+    position: relative;
+    text-align: center;
+    overflow: auto;
+    width: 100%;
+    float: left;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+#round_icons ul {
+    left: 80px;
+    color: white;
+}
+
+#round_icons ul li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: white;
+}
+
+#round_icons ul li:hover {
+    color: lawngreen;
+}
+
+#round_icons ul li a {
+    color: black;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+#round_icons ul li a:hover {
+    color: lawngreen;
+}
+
+#round_icons ul li a span {
+    color: #008000;
+    text-align: center;
+    width: 100%;
+    overflow: auto;
+}
+
+#round_icons ul li a input {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+ul {
+    margin: auto;
+    list-style: none;
+}
+
+#leftsidebar {
+    width: 60px;
+    position: fixed;
+    text-align: center;
+    overflow: auto;
+    border-radius: 3px;
+    /*margin: 60px 0 0 0;*/
+    display: none;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    min-height: 30px;
+    background-color: rgba(0,128,0,0.5);
+}
+
+#leftsidebar2 {
+    min-width: 60px;
+    max-width: 350px;
+    /*position: fixed;
+    display: inline-block;*/
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    min-height: 60px;
+    max-height: calc(100% - 205px);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 70px;
+}
+
+#rightsidebar2 {
+    max-width: 350px;
+    min-width: 60px;
+    position: fixed;
+    text-align: center;
+    overflow: auto;
+    border-radius: 10px;
+    max-height: 300px;
+    min-height: 60px;
+    display: inline-block;
+    right: 5px;
+    bottom: 10px;
+    z-index: 10;
+}
+
+#leftsidebar.active{
+    display: inline-block;
+    width: 100%;
+    border-radius: 0;
+}
+
+#lowerleftsidebar {
+    min-width: 60px;
+    min-height: 60px;
+    max-width: 360px;
+    max-height: 360px;
+    display: block;
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+    text-align: center;
+    overflow: auto;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+#statusbar {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    position: relative;
+    /*border-radius: 10px;
+    background-color: rgba(102,102,255,0.8);*/
+    background-color: white;
+    overflow: auto;
+    padding: 5px;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+#contentwrapper {
+    /*background-color: white;*/
+    width: calc(100% - 140px);
+    /*display: inline-block;
+    position: relative;
+    margin-left: -290px;*/
+    float: left;
+    margin-top: 70px;
+    text-align: center;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+#rightsidebar {
+    /*width: 350px;*/
+    max-width: 350px;
+    min-width: 60px;
+    min-height: 60px;
+    max-height: calc(100% - 130px);
+    /*display: inline-block;
+    position: fixed;*/
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+    margin-top: 70px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#chatwrapper {
+    text-align: center;
+    /*border-radius: 10px;*/
+    padding: 5px;
+    background-color: white;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+#user_uploads {
+}
+
+#live_streaming {
+}
+
+.content {
+    margin: auto;
+    padding-bottom: 20px;
+    width: 100%;
+    /*min-height: 400px;*/
+    position: relative;
+    overflow: auto;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+
+}
+
+.contentunit {
+    margin: 5px;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    overflow: auto;
+    display: inline-block;
+    padding: 5px;
+    background: white;
+}
+
+.contentunitrow {
+    /*overflow: auto;
+    width: 100%;
+    background-color: #ccc;
+    padding: 5px;*/
+    margin: 0 auto;
+}
+
+.contentunitdescription {
+    /*display: none;*/
+}
+
+.contentunitdescription2 {
+    /*display: none;
+    padding: 10px;
+    background: #eee;*/
+}
+
+#chatmenu {
+    text-align: center;
+    /*background: #00b300;*/
+    overflow: auto;
+    /*padding: 5px;*/
+    color: white;
+}
+  
+#chatbox {
+    width: 100%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+    /*margin: 0 0 5px 0;*/
+    position: relative;
+    overflow: hidden;
+    white-space: pre-wrap;
+    overflow-y: scroll;
+}
+
+#chatform {
+     text-align: center;
+     background-color: white;
+     height: auto;
+     width: 100%;
+     overflow: auto;
+}
+
+#chatform:hover {
+    /* background-color: #ddd; */
+}
+
+#submissions{
+    overflow: hidden;
+    z-index: 2;
+}
+
+/*
+#submitmsg {
+    font-size: 20px;
+    padding: 10px;
+    color: green;
+    position: relative;
+    overflow: hidden;
+}
+
+#submitmsg:hover {
+    color: #5bb75b;
+}
+
+#sendvoicemsg {
+    font-size: 20px;
+    padding: 10px;
+    color: green;
+    position: relative;
+    overflow: hidden;
+}
+
+#sendvoicemsg:hover {
+    color: #5bb75b;
+}
+*/
+
+#addchatroom {
+    margin: 0 auto;
+    color: white;
+    background-color: #5bb75b;
+    display: none;
+    position: fixed;
+    text-align: center;
+    overflow:auto;
+    border-radius: 7px;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    margin-top: -18em;
+    margin-left: -20em;
+    width: 40em;
+    padding: 10px;
+}
+
+#popularchatrooms {
+    margin: 0 auto;
+    color: white;
+    background-color: #5bb75b;
+    display: none;
+    position: fixed;
+    text-align: center;
+    overflow: auto;
+    border-radius: 7px;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    margin-top: -18em;
+    margin-left: -20em;
+    width: 40em;
+    padding: 10px;
+}
+
+#trendingtopics {
+    margin: 0 auto;
+    color: white;
+    background-color: #5bb75b;
+    display: none;
+    position: fixed;
+    text-align: center;
+    overflow: auto;
+    border-radius: 7px;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    margin-top: -18em;
+    margin-left: -35em;
+    width: 70em;
+    padding: 10px;
+}
+
+#uploadcontent {
+    color: white;
+    background-color: #5bb75b;
+    display: none;
+    position: fixed;
+    text-align: center;
+    overflow: auto;
+    border-radius: 7px;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    margin-top: -18em;
+    margin-left: -20em;
+    width: 40em;
+    padding: 10px;
+}
+
+/*
+#usermsg {
+    left: 0;
+    color: green;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 3px;
+    z-index: 2;
+    width: 280px;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+    position: relative;
+    background-color: transparent;
+}
+*/
+  
+#submit {
+    width: auto;
+}
+
+#welcome {
+    float:left;
+    margin: 0;
+    color: black;
+}
+
+#myAuthor {
+    /* div containing getter variable from chatmenu, welcome div */
+    float: left;
+    margin-left: 5px;
+    color: green;
+}
+
+.author {
+    /* div containing set variable from addmessages.js calling the post method */
+    color: green;
+    font-weight: normal;
+    float: left;
+    margin-left: 5px;
+}
+
+.currentTime {
+    float: left;
+    color: rgb(105,105,105);
+}
+
+.timestamp {
+    width: fit-content;
+    margin: 0 auto;
+}
+  
+.logout {
+    float: right;
+    overflow: auto;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 15px;
+}
+
+.logout input {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%)
+}
+
+.menu-icon {
+    float: left;
+    overflow: auto;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 15px;
+    color: black;
+}
+
+.logout:hover, .menu-icon:hover {
+     /* background-color: #ddd; */
+}
+
+.menu-icon i:hover {
+    color: lawngreen;
+}
+
+#message {
+    width: 100%;
+}
+  
+.msgln {
+    color: #333333;
+    font: 10px arial;
+    padding: 5px;
+    word-wrap: break-word;
+    background-color: white;
+    margin: 0 0 5px 0;
+}
+
+.usermsgln {
+    color: black;
+    background: white;
+    font: 10px arial;
+    text-align: right;
+    padding: 5px;
+    margin: 3px 0 3px 0;
+    word-wrap: break-word;
+}
+
+.otherusermsgln {
+    color: black;
+    background: white;
+    font: 10px arial;
+    text-align: left;
+    padding: 5px;
+    margin: 3px 0 3px 0;
+    word-wrap: break-word;
+}
+
+.tr .th td {
+    padding: 10px;
+    text-align: center;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* Style the tab */
+#tab {
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Style the buttons inside the tab
+#tab button {
+    background-color: white;
+    color: green;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px;
+    font-weight: bold;
+}
+*/
+
+.tablinks{
+    margin: 0;
+    /*border-radius: 7px;*/
+}
+
+#user_uploads_tab{
+    background-color: white;
+    color: #ff0000;
+    border: none;
+    padding: 10px;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+#live_streaming_tab{
+    width: 100%;
+    background-color: white;
+    color: rgb(74, 154, 138);
+    border: none;
+    padding: 10px;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+#live_chat_tab{
+    width: 100%;
+    background-color: white;
+    color: #00b300;
+    border: none;
+    padding: 10px;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+#status_tab{
+    width: 100%;
+    background-color: white;
+    color: #6666ff;
+    border: none;
+    padding: 10px;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+/* Change background color of buttons
+#tab button:hover {
+    background-color: #00b300;
+    color: white;
+}
+*/
+
+#user_uploads_tab:hover{
+    background-color: #ff0000;
+    color: white;
+}
+
+#live_streaming_tab:hover{
+    background-color: rgb(74, 154, 138);
+    color: white;
+}
+
+#live_chat_tab:hover{
+    background-color: #00b300;
+    color: white;
+}
+
+#status_tab:hover{
+    background-color: #6666ff;
+    color: white;
+}
+
+/* Create an active/current tablink class
+#tab button.active {
+    background-color: #008000;
+    color: white;
+}
+*/
+
+#user_uploads_tab.active{
+    background-color: #ff0000;
+    color: white;
+}
+
+#live_streaming_tab.active{
+    background-color: rgb(74, 154, 138);
+    color: white;
+}
+
+#live_chat_tab.active{
+    background-color: #00b300;
+    color: white;
+}
+
+#status_tab.active{
+    background-color: #6666ff;
+    color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    /*display: none;*/
+    border-top: none;
+}
+
+/* Initializing the visibility of the divs within the menuitems div */
+#menuitems {
+    z-index: 1;
+}
+
+#drop_down {
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    margin-top: 500px;
+    background: white;
+    color: green;
+}
+
+#close {
+    float: right;
+    display: inline-block;
+    padding: 10px;
+    background: #ddd;
+}
+
+#close:hover{
+    cursor: pointer;
+    background:red;
+}
+
+.streamviewer{
+    width: 400px;
+    height: 400px;
+    background: #008000;
+    margin: 0 auto;
+}
+
+.sessionid {
+    font-weight: bold;
+}
+
+.stacked-bar-graph {
+    width: 100%;
+    /*padding: 0;
+    background: #eee;
+    color: #414042;*/
+}
+
+.stacked-bar-graph .span {
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+}
+
+.stacked-bar-graph .bar-1 {
+    display: inline-block;
+    background: #ffd700;
+    overflow: auto;
+    min-width: 5%;
+}
+
+.stacked-bar-graph .bar-2 {
+    display: inline-block;
+    background: #c0c0c0;
+    overflow: auto;
+    min-width: 5%;
+}
+
+.stacked-bar-graph .bar-3 {
+    display: inline-block;
+    background: #D57E00;
+    overflow: auto;
+    min-width: 5%;
+}
+
+.stacked-bar-graph .bar-4 {
+    display: inline-block;
+    background: #39e600;
+    overflow: auto;
+    min-width: 5%;
+}
+
+.stacked-bar-graph .bar-5 {
+    display: inline-block;
+    background: #e6e600;
+    overflow: auto;
+    min-width: 5%;
+}
+
+.stacked-bar-graph .bar-6 {
+    display: inline-block;
+    background: #ff0000;
+    overflow: auto;
+    min-width: 5%;
+}
+
+#fileToUpload {
+    height: auto;
+    margin: 0 auto;
+    line-height: inherit;
+}
+
+#fileSubmit {
+    background-color: rgb(47, 154, 138);
+    border: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0 0 0;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#chatroomSubmit {
+    background-color: rgb(47, 154, 138);
+    border: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0 0 0;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+button:active, #fileSubmit:active {
+    background-color: #008000;
+}
+
+button:hover, #fileSubmit:hover {
+    background-color: #1d7e6f;
+}
+
+button[disabled], #fileSubmit[disabled] {
+    color: #ccc;
+}
+
+button[disabled]:hover, #fileSubmit[disabled]:hover {
+    background-color: #d84a38;
+}
+
+.buttoncolumn {
+    /*text-align: center;
+    vertical-align: inherit;
+    line-height: normal;
+    font-size: medium;
+    height: 100%;
+    background-color: #ddd;
+    color: green;*/
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.9;
+    border: none;
+}
+
+.buttoncolumn:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.timer{
+    color: black;
+}
+
+.msgcontent{
+    color: black;
+    font: 10px arial;
+    text-align: center;
+    /*padding: 5px;
+    margin: 3px 0 3px 0;*/
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 1126px) {
+    /* start of large tablet styles */
+    body {
+        width: 100%;
+    }
+    #tab {
+        width: 100%;
+    }
+    #contentwrapper {
+        width: 100% !important;
+        display: block;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+}
+
+@media screen and (max-width: 502px) {
+    /* start of phone styles */
+    body {
+        background-size: 502px 100%;
+        overflow: scroll;
+    }
+}
